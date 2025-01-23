@@ -76,7 +76,7 @@ function Services() {
   return (
     <section className='bg-white'>
         <div className='container pb-14 pt-16'>
-            <h1 className='text-4xl font-bold text-left pb-10'> Service We Provide
+            <h1 className='text-4xl font-bold text-left pb-10'> Service We Provides
             </h1>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-8'>
                 {ServiceData.map((service)=>(
