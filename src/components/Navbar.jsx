@@ -1,6 +1,7 @@
 import React from "react";
 import { IoMdMenu } from "react-icons/io";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 const NavbarMenu = [
   {
@@ -30,6 +31,11 @@ const NavbarMenu = [
   },
 ];
 function Navbar() {
+
+  const scrollToSection = (id) => {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+};
+
   return (
     <nav className="relative z-20">
       <motion.div
@@ -39,13 +45,13 @@ function Navbar() {
       >
         {/* Logo section */}
         <div>
-          <h1 className="font-bold text-2xl">The Coding Journey</h1>
+          <h1 className="font-bold text-2xl">TechLearn</h1>
         </div>
         {/* Menu section */}
         <div className="hidden lg:block">
           <ul className="flex items-center gap-3">
             {NavbarMenu.map((menu) => (
-              <li key={menu.id}>
+              <li key={menu.id} onClick={()=> scrollToSection(menu.title)}>
                 <a
                   href={menu.path}
                   className="inline-block py-2 px-3 hover:text-secondary relative group"
@@ -55,7 +61,11 @@ function Navbar() {
                 </a>
               </li>
             ))}
+           <li>
+           <Link to="/signin">
             <button className="primary-btn">Sign In</button>
+            </Link>
+            </li>
           </ul>
         </div>
         {/* Mobile Hamburger menu section */}

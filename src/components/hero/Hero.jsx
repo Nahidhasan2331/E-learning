@@ -35,7 +35,7 @@ const Hero =() =>{
 
             <h1 className='text-3xl lg:text-5xl font-bold !leading-snug'>
                 let's learn to build a {" "}<span
-               className="text-secondary">Website</span>for your business
+               className="text-secondary">Website </span> for your business
                 </h1>
                 <div className='flex justify-center md:justify-start'>
                   <button className='primary-btn flex items-center gap-2 group'>

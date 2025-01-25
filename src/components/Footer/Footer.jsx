@@ -43,10 +43,10 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-4 ">
               <h1 className="text-2xl font-bold">Links</h1>
               <div className="text-dark2">
-                <ul className="space-y-2 text-lg">
+                <ul className="space-y-2 text-lg ">
                   <li className="cursor-pointer hover:text-secondary duration-200">
                     Home
                   </li>
@@ -78,16 +78,16 @@ const Footer = () => {
             </div>
             {/* social icons */}
             <div className="flex space-x-6 py-3">
-              <a href="">
+              <a href="https://web.whatsapp.com">
                 <FaWhatsapp className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
               </a>
-              <a href="">
+              <a href="https://www.instagram.com">
                 <FaInstagram className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
               </a>
               <a href="">
                 <TbWorldWww className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
               </a>
-              <a href="">
+              <a href="https://www.youtube.com">
                 <FaYoutube className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
               </a>
             </div>
