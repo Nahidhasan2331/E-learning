@@ -32,8 +32,4 @@ The purpose of this project is to demonstrate practical web development skills b
 - Search and filtering functionality
 - Backend and database integration
 
-## Author
 
-**MD Nahid Hasan**
-
-GitHub: https://github.com/Nahidhasan2331
